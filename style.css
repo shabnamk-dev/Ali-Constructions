@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:hsl(36, 29%, 97%);
+    color:hsl(0, 0%, 20%);
+}
+
+/*Navbar*/
+header{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+    position: sticky;
+    top:0;
+}
+
+nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color:hsl(0, 0%, 20%);
+}
+
+/*Hero*/
+.hero{
+    height:90vh;
+    background:url() no-repeat center/cover;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.overlay{
+    text-align:center;
+    color:white;
+    background:hsla(0, 0%, 0%, 0.4);
+    padding:40px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top:15px;
+    padding: 10px 20px;
+    background: gold;
+    color:black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/*Section*/
+.cards{
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    padding:20px;
+    width:200px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/*Portfolio*/
+.grid img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*filter button*/
+.filters{
+    margin-bottom:20px;
+}
+.filter-btn{
+    padding:8px 15px;
+    margin:5px;
+    border:none;
+    background:hsl(0, 0%, 87%);
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+.filter-btn:hover{
+    background: gold;
+}
+
+/*Animation*/
+section{
+    opacity:1;
+    transform: translateY(40px);
+    transition: 0.4s ease;
+}
+
+section.show{
+    opacity:0;
+    transform: translateY(0);
+}
+/*Hover Effect*/
+.grid img{
+    transition:transform 0.3s ease;
+}
+
+.grid img:hover{
+    transform:scale(1.05);
+}
+
+/*Contact*/
+.contact p{
+    margin: 10px 0;
+}
+
+/*Responsive*/
+@media (max-width: 768px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+@media(max-width:500px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .header{
+        flex-direction:column;
+        align-items:center;
+    }
+}
