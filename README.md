@@ -1,0 +1,16 @@
+#Ali Constructions Website
+A responsive business website built for an interior design and furniture service.
+
+##Feature
+- Responsive design
+- Portfolio section with filter
+- Smooth Animation
+- WhatsApp Contact button
+
+##Tech used
+- HTML
+- CSS
+- JavaScript
+
+##Purpose
+Built as a real-world project for a family Business
