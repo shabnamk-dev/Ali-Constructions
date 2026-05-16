@@ -3,7 +3,6 @@ A responsive business website built for an interior design and furniture service
 
 ##Feature
 - Responsive design
-- Portfolio section with filter
 - Smooth Animation
 - WhatsApp Contact button
 
