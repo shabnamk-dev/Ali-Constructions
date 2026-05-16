@@ -3,86 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Constructions</title>
-    <link rel="icon" href="">
-    <link rel="stylesheet" href="style.css">
 
+    <title>Ali Constructions</title>
+
+    <!-- Google Font -->
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" 
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Header -->
     <header>
-        <h1>Ali Constructions</h1>
+
+        <a href="#home" class="logo">
+        <img src="Images/logo.png" alt="Ali Constructions Logo">
+        </a>
+
         <nav>
             <a href="#home">Home</a>
-            <a href="#portfolio">Projects</a>
+            <a href="#about">About Us</a>
             <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
             <a href="#contact">Contact</a>
-    </nav>
+        </nav>
+
     </header>
 
     <!-- Hero -->
     <section class="hero" id="home">
+
         <div class="overlay">
-            <h2>Crafting Elegant Spaces</h2>
-            <p>Interior Design & Custom Furniture</p>
-            <a href="#portfolio" class="btn">View Projects</a>
+
+            <h2 class="fade-up">
+                Crafting Elegant Spaces
+            </h2>
+
+            <p class="fade-up">
+                Interior Design & Custom Furniture
+            </p>
+
+            <a href="#portfolio" class="btn fade-up">
+                View Projects
+            </a>
+
         </div>
-    </section>    
+
+    </section>
 
     <!-- About -->
-     <section class="about">
+    <section class="about reveal" id="about">
+
         <h2>About Us</h2>
+
         <p>
-            At Ali Consturctions,we specialize in transforming spaces into beautiful
-            and functional environments. We provide interior design solutions and custom furniture tailored to your needs.
+        At Ali Constructions, we believe every space should reflect comfort,
+        style, and functionality. With a passion for quality craftsmanship
+        and modern interior design, we transform ordinary spaces into elegant
+        environments that feel timeless and welcoming.
+    </p>
 
-        </p>
-     </section>
+    <br>
 
-     <!-- Services -->
-      <section class="services" id="services">
+    <p>
+        From customized furniture and space planning to complete renovation
+        work, our goal is to deliver designs that match your vision while
+        maintaining attention to detail, durability, and aesthetics.
+        Every project we take on is built with creativity, precision,
+        and dedication.
+    </p>
+    </section>
+
+    <!-- Services -->
+    <section class="services reveal" id="services">
+
         <h2>Our Services</h2>
+
         <div class="cards">
-            <div class="card">Interior Design</div>
-            <div class="card">Space Planning</div>
-            <div class="card">Custom Furniture</div>
-            <div class="card">Renovation Work</div>
-        </div>
-      </section>
 
-      <!-- Portfolio -->
-       <section class="portfolio" id="portfolio">
+            <div class="card reveal">
+                Interior Design
+            </div>
+
+            <div class="card reveal">
+                Space Planning
+            </div>
+
+            <div class="card reveal">
+                Custom Furniture
+            </div>
+
+            <div class="card reveal">
+                Renovation Work
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio reveal" id="portfolio">
+
         <h2>Our Projects</h2>
-        <div class="filters">
-            <button class="filter-btn" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="living">Living</button>
-            <button class="filter-btn" data-filter="bedroom">Bedroom</button>
-            <button class="filter-btn" data-filter="furniture">Furniture</button>
-
-        </div>
 
         <div class="grid">
-            <img src="https://via.placeholder.com/300">
-            <img src="https://via.placeholder.com/300">
-            <img src="https://via.placeholder.com/300">
-            <img src="https://via.placeholder.com/300">
-            <img src="https://via.placeholder.com/300">
-            <img src="https://via.placeholder.com/300">
+
+            <div class="img-box reveal">
+                <img 
+                    src="Images/IMG-20260516-WA0000.jpg" 
+                    alt="Interior Project 1"
+                    class="portfolio-item"
+                >
+            </div>
+
+            <div class="img-box reveal">
+                <img 
+                    src="Images/IMG-20260516-WA0001.jpg" 
+                    alt="Interior Project 2"
+                    class="portfolio-item"
+                >
+            </div>
+
+            <div class="img-box reveal">
+                <img 
+                    src="Images/IMG-20260516-WA0002.jpg" 
+                    alt="Interior Project 3"
+                    class="portfolio-item"
+                >
+            </div>
+
+            <div class="img-box reveal">
+                <img 
+                    src="Images/IMG-20260516-WA0003.jpg" 
+                    alt="Interior Project 4"
+                    class="portfolio-item"
+                >
+            </div>
+
+            <div class="img-box reveal">
+                <img 
+                    src="Images/IMG-20260516-WA0004.jpg" 
+                    alt="Interior Project 5"
+                    class="portfolio-item"
+                >
+            </div>
+
+            <div class="img-box reveal">
+                <img 
+                    src="Images/IMG-20260516-WA0005.jpg" 
+                    alt="Interior Project 6"
+                    class="portfolio-item"
+                >
+            </div>
+
+            <div class="img-box reveal">
+                <img 
+                    src="Images/IMG-20260516-WA0007.jpg" 
+                    alt="Interior Project 7"
+                    class="portfolio-item"
+                >
+            </div>
+
+            <div class="img-box reveal">
+                <img 
+                    src="Images/IMG-20260516-WA0008.jpg" 
+                    alt="Interior Project 8"
+                    class="portfolio-item"
+                >
+            </div>
+
+            <div class="img-box reveal">
+                <img 
+                    src="Images/IMG-20260516-WA0009.jpg" 
+                    alt="Interior Project 9"
+                    class="portfolio-item"
+                >
+            </div>
+
+            <div class="img-box reveal">
+                <img 
+                    src="Images/IMG-20260516-WA0010.jpg" 
+                    alt="Interior Project 10"
+                    class="portfolio-item"
+                >
+            </div>
+
+            <div class="img-box reveal">
+                <img 
+                    src="Images/IMG-20260516-WA0011.jpg" 
+                    alt="Interior Project 11"
+                    class="portfolio-item"
+                >
+            </div>
+
+            <div class="img-box reveal">
+                <img 
+                    src="Images/IMG-20260516-WA0012.jpg" 
+                    alt="Interior Project 12"
+                    class="portfolio-item"
+                >
+            </div>
 
         </div>
-       </section>
-       
+
+    </section>
+
     <!-- Contact -->
-     <section class="contact" id="contact">
+    <section class="contact reveal" id="contact">
+
         <h2>Contact Us</h2>
-        <p>Get in touch for your next project</p>
-        <p>📞Call: </p>
-        <p>✉️Email: </p>
-     </section>
+
+        <p>
+            Like our work so far? Get in touch for your next project.
+        </p>
+
+        <br>
+
+        <p><strong>Ali Ahmed Khan</strong></p>
+
+        <p>
+            📞 Call:
+            <a href="tel:+919819822213">9819822213</a> /
+            <a href="tel:+919920445184">9920445184</a>
+        </p>
+
+        <p>
+            ✉️ Email:
+            <a href="mailto:aliin@gmail.com">
+                aliin@gmail.com
+            </a>
+        </p>
+
+        <br>
+
+        <p><strong>Interior Designer: Nadeem Khan</strong></p>
+
+        <p>
+            📞 Call:
+            <a href="tel:+919004624434">9004624434</a>
+        </p>
+
+        <p>
+            ✉️ Email:
+            <a href="mailto:khan987nadeem@gmail.com">
+                khan987nadeem@gmail.com
+            </a>
+        </p>
+
+    </section>
 
     <!-- WhatsApp Button -->
-     <a href=""
-     class="whatsapp">Chat</a>
+    <a 
+        href="https://wa.me/919004624434"
+        class="whatsapp"
+        target="_blank"
+    >
+        Chat
+    </a>
 
-     <script src="script.js"></script>
+    <!-- Popup -->
+    <div id="popup" class="popup">
+
+        <span id="close">&times;</span>
+
+        <img 
+            id="popup-img"
+            src=""
+            alt="Expanded Project Image"
+        >
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 </html>
